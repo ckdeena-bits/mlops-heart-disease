@@ -68,9 +68,10 @@ python -m heart data
 # 2. Train models with 5-fold CV & MLflow
 python -m heart train
 
-# 3. View MLflow UI in Firefox
-mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db --port 5000 &
+# 3. View MLflow UI in Firefox (run quietly in background)
+nohup mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db --port 5000 > /dev/null 2>&1 &
 # Open Firefox at: http://localhost:5000
+# (To stop MLflow later: pkill -f "mlflow ui")
 
 # 4. Run Pytest Suite with Coverage & Quality Gates
 pytest --cov=heart --cov=api --cov-report=term-missing
