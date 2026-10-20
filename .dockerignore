@@ -1,0 +1,16 @@
+.git
+.github
+.venv
+venv
+mlruns
+.pytest_cache
+__pycache__
+*.pyc
+*.log
+.coverage
+htmlcov
+.ipynb_checkpoints
+notebooks
+reports/figures
+docs
+tests

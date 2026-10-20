@@ -1,0 +1,53 @@
+data:
+  raw_url: "https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/processed.cleveland.data"
+  raw_path: "data/raw/processed.cleveland.data"
+  clean_path: "data/processed/heart_disease_clean.csv"
+  feature_names:
+    - age
+    - sex
+    - cp
+    - trestbps
+    - chol
+    - fbs
+    - restecg
+    - thalach
+    - exang
+    - oldpeak
+    - slope
+    - ca
+    - thal
+    - num
+  categorical_features:
+    - sex
+    - cp
+    - fbs
+    - restecg
+    - exang
+    - slope
+    - ca
+    - thal
+  numeric_features:
+    - age
+    - trestbps
+    - chol
+    - thalach
+    - oldpeak
+  target: target
+  random_state: 42
+  test_size: 0.20
+
+training:
+  cv_folds: 5
+  scoring: "roc_auc"
+  random_state: 42
+  quality_gate_auc: 0.80
+
+models:
+  save_dir: "models"
+  model_path: "models/model.joblib"
+  metadata_path: "models/metadata.json"
+  mlflow_experiment_name: "heart-disease-classification"
+
+server:
+  host: "0.0.0.0"
+  port: 8000

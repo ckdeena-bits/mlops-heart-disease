@@ -1,0 +1,9 @@
+apiVersion: v2
+name: heart-api
+description: Production Helm Chart for Heart Disease Risk Prediction API
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+maintainers:
+  - name: Deenadayalan C K
+    email: 2025AE05402@wilp.bits-pilani.ac.in
