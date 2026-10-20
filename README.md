@@ -60,8 +60,6 @@ mlops-heart-disease/
 │   └── processed/                 # Cleaned, validated dataset
 ├── docs/                          # Runbooks and presentation scripts
 │   ├── vm_runbook.md              # Rocky Linux 9.5 VM deployment instructions
-│   ├── video_script.md            # Video walkthrough timeline and script
-│   └── implementation_plan.md     # Engineering blueprint & specifications
 ├── helm/heart-api/                # Production Helm chart (Deployment, Service, HPA, Ingress)
 ├── k8s/                           # Plain rendered Kubernetes manifests
 ├── models/                        # Serialized champion model.joblib & metadata.json
